@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #070C15;
+  color: #CBD5E1;
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #070C15; }
+::-webkit-scrollbar-thumb { background: #22D3EE; border-radius: 4px; }
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.section-line {
+  width: 40px;
+  height: 3px;
+  background: #22D3EE;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+.card-dark {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card-dark:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.35) !important;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  color: #94A3B8;
+}
+
+.timeline-item {
+  border-left: 2px solid rgba(34, 211, 238, 0.3);
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+
+.btn-cyan {
+  background-color: #22D3EE;
+  color: #070C15;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-cyan:hover {
+  background-color: #06B6D4;
+  color: #070C15;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #CBD5E1;
+  border-radius: 8px;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.nav-link-custom {
+  background: none;
+  border: none;
+  color: #64748B;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.nav-link-custom:hover {
+  color: #22D3EE;
+}
+
+.accent { color: #22D3EE; }
+
+@media (max-width: 768px) {
+  section {
+    min-height: 100vh;
+    background-position: center !important;
+    background-size: contain;
+  }
+}
