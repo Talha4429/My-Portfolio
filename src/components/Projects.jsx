@@ -43,7 +43,7 @@ export default function Projects() {
                       Live Site ↗
                     </a>
                   )}
-                  {code && (
+                  {/* {code && (
                     <a
                       href={code}
                       target="_blank"
@@ -53,7 +53,7 @@ export default function Projects() {
                     >
                       View Code ↗
                     </a>
-                  )}
+                  )} */}
                 </div>
               )}
             </div>
