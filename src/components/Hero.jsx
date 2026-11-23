@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="row align-items-center">
 
           <div className="col-12 col-md-6">
-            <p className="accent mb-2">Software Engineer | Ruby on Rails Backend Developer</p>
+            <p className="accent mb-2">Software Engineer | Ruby on Rails | Backend Developer</p>
 
             <h1
               style={{
