@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const links = ["About", "Skills", "Projects", "Education", "Contact"];
+const links = ["About", "Skills", "Projects", "Experience", "Education", "Contact"];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -51,6 +51,8 @@ export default function Navbar() {
         <div className="d-md-none">
           <button
             onClick={() => setOpen(!open)}
+            aria-label="Toggle navigation"
+            aria-expanded={open}
             style={{
               background: "none",
               border: "none",
@@ -68,8 +70,14 @@ export default function Navbar() {
         <div
           className="d-md-none"
           style={{
+            position: "absolute",
+            top: "100%",
+            left: 0,
+            width: "100%",
             background: "rgba(7, 12, 21, 0.98)",
-            borderTop: "1px solid rgba(255,255,255,0.08)",
+            backdropFilter: "blur(12px)",
+            borderBottom: "1px solid rgba(255,255,255,0.08)",
+            boxShadow: "0 10px 25px rgba(0, 0, 0, 0.5)",
             padding: "10px 20px",
           }}
         >

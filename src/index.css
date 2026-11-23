@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap');
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -84,7 +82,7 @@ body {
 .nav-link-custom {
   background: none;
   border: none;
-  color: #64748B;
+  color: #94A3B8;
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -100,10 +98,32 @@ body {
 
 .accent { color: #22D3EE; }
 
+#about {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/bgimage.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
 @media (max-width: 768px) {
-  section {
-    min-height: 100vh;
-    background-position: center !important;
-    background-size: contain;
+  #about {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(7, 12, 21, 0.1) 0%,
+        rgba(7, 12, 21, 0.3) 40%,
+        rgba(7, 12, 21, 0.85) 70%,
+        rgba(7, 12, 21, 0.95) 100%
+      ),
+      url('/bgimage-mobile.webp');
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding-top: 100px;
+    padding-bottom: 48px;
   }
 }

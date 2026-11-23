@@ -25,7 +25,7 @@ export default function Contact() {
           Email Me
         </a>
 
-        {/* FIXED LINKEDIN BUTTON */}
+        {/* LINKEDIN BUTTON */}
         <a
           href="https://linkedin.com/in/muhammad-talha-2b49451ba"
           target="_blank"
@@ -34,9 +34,19 @@ export default function Contact() {
         >
           LinkedIn ↗
         </a>
+
+        {/* GITHUB BUTTON */}
+        <a
+          href="https://github.com/Talha4429"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-ghost px-4 py-2"
+        >
+          GitHub ↗
+        </a>
       </div>
 
-      <p style={{ color: "#64748B", fontSize: 13 }}>
+      <p style={{ color: "#94A3B8", fontSize: 13 }}>
         +92 317 4661456 · Lahore, Pakistan
       </p>
     </section>

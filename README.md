@@ -1,16 +1,36 @@
-# React + Vite
+# Muhammad Talha - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal developer portfolio website showcasing full-stack Ruby on Rails, Next.js, and software engineering projects.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Framework:** React 19
+- **Build Tool:** Vite 8
+- **Styling:** Bootstrap 5.3 & Custom CSS
+- **Fonts:** Syne & DM Sans (Google Fonts)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting Started
 
-## React Compiler
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation & Development
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+4. Preview production build locally:
+   ```bash
+   npm run preview
+   ```
