@@ -14,6 +14,8 @@ export const featuredProjects = [
     tech: "Next.js 16, TypeScript, Supabase, Tailwind v4",
     link: "https://blackpartylimo.com",
     code: "https://github.com/Talha4429/limo-project",
+    image: "/projects/limo.webp",
+    imageAlt: "Screenshot of the Black Party Limo homepage",
     bullets: [
       "Built a full-stack booking platform with Supabase (PostgreSQL) and validated forms using React Hook Form and Zod.",
       "Integrated the Resend API to send booking notifications and customer replies by email.",
@@ -27,6 +29,8 @@ export const featuredProjects = [
     tech: "Next.js 14, PostgreSQL, Vercel",
     link: null,
     code: null,
+    image: "/projects/bellum.webp",
+    imageAlt: "Screenshot of the Bellum homepage",
     bullets: [
       "Built a content-managed site with a PostgreSQL backend for products, portfolio, navigation categories, and quote requests.",
       "Developed a database-driven Collections mega menu managed from an admin panel.",

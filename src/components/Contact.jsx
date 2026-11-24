@@ -1,6 +1,7 @@
 export default function Contact() {
   return (
-    <section id="contact" className="container py-5 text-center">
+    <section id="contact" className="container py-5 text-center reveal-on-scroll">
+      <div className="section-number">05 / Contact</div>
       <h2 className="section-title">Contact</h2>
       <div className="section-line mx-auto" />
 

@@ -1,15 +1,43 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const links = ["About", "Skills", "Projects", "Experience", "Education", "Contact"];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("About");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 160;
+      const isBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 50;
+
+      if (isBottom) {
+        setActiveSection(links[links.length - 1]);
+        return;
+      }
+
+      for (let i = links.length - 1; i >= 0; i--) {
+        const el = document.getElementById(links[i].toLowerCase());
+        if (el && el.offsetTop <= scrollPosition) {
+          setActiveSection(links[i]);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollTo = (id) => {
     document
       .getElementById(id.toLowerCase())
       ?.scrollIntoView({ behavior: "smooth" });
 
+    setActiveSection(id);
     setOpen(false); // close menu on click (important for mobile)
   };
 
@@ -41,7 +69,11 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="d-none d-md-flex gap-4">
           {links.map((l) => (
-            <button key={l} className="nav-link-custom" onClick={() => scrollTo(l)}>
+            <button
+              key={l}
+              className={`nav-link-custom ${activeSection === l ? "active" : ""}`}
+              onClick={() => scrollTo(l)}
+            >
               {l}
             </button>
           ))}
@@ -92,7 +124,8 @@ export default function Navbar() {
                 textAlign: "left",
                 background: "none",
                 border: "none",
-                color: "#fff",
+                color: activeSection === l ? "#22D3EE" : "#fff",
+                fontWeight: activeSection === l ? 600 : 400,
               }}
             >
               {l}
